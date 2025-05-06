@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+  <meta charset="UTF-8">
+  <title>Cadastro de Usuário</title>
+</head>
+<body>
+
+  <h1>CADASTRO DE USUÁRIO</h1>
+
+  <fieldset>
+    <legend><strong>Dados Pessoais</strong></legend>
+    <ol>
+      <li>
+        <label for="cpf">CPF*</label>
+        <input type="text" id="cpf" name="cpf" required>
+      </li>
+      <li>
+        <label for="nome">Nome Completo*</label>
+        <input type="text" id="nome" name="nome" required>
+      </li>
+      <li>
+        <label for="nascimento">Data de Nascimento*</label>
+        <input type="date" id="nascimento" name="nascimento" required>
+      </li>
+      <li>
+        <label for="sexo">Sexo*</label>
+        <select id="sexo" name="sexo" required>
+          <option value="">Selecione</option>
+          <option value="feminino">Feminino</option>
+          <option value="masculino">Masculino</option>
+          <option value="outro">Outro</option>
+        </select>
+      </li>
+      <li>
+        <label for="celular">Celular*</label>
+        <input type="tel" id="celular" name="celular" required>
+      </li>
+      <li>
+        <label for="telefone">Telefone</label>
+        <input type="tel" id="telefone" name="telefone">
+      </li>
+    </ol>
+  </fieldset>
+
+  <fieldset>
+    <legend><strong>Informações de Acesso</strong></legend>
+    <ol>
+      <li>
+        <label for="email">E-mail*</label>
+        <input type="email" id="email" name="email" required>
+      </li>
+      <li>
+        <label for="confirma_email">Confirme seu E-mail*</label>
+        <input type="email" id="confirma_email" name="confirma_email" required>
+      </li>
+      <li>
+        <label for="senha">Senha*</label>
+        <input type="password" id="senha" name="senha" required>
+      </li>
+      <li>
+        <label for="confirma_senha">Confirme sua Senha*</label>
+        <input type="password" id="confirma_senha" name="confirma_senha" required>
+      </li>
+    </ol>
+  </fieldset>
+
+  <button type="submit">SALVAR CADASTRO</button>
+  <span>ou</span>
+  <a href="#">Cancelar</a>
+
+</body>
+</html>
