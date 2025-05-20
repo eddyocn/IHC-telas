@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+
+<head>
+    <meta charset="UTF-8">
+    <title>Agenda Médica</title>
+</head>
+
+<body>
+
+    <h1>AGENDA MÉDICA</h1>
+
+    <form>
+        <ol>
+            <ul>
+                <label for="plano">Plano de Saúde:</label>
+                <select id="plano" name="plano">
+                    <option value="">Selecione</option>
+                    <option value="plano1">Plano 1</option>
+                    <option value="plano2">Plano 2</option>
+                </select>
+            </ul>
+
+            <ul>
+                <label for="especialidade">Especialidade:</label>
+                <select id="especialidade" name="especialidade">
+                    <option value="">Selecione</option>
+                    <option value="cardiologia">Cardiologia</option>
+                    <option value="ortopedia">Ortopedia</option>
+                </select>
+            </ul>
+
+            <ul>
+                <label for="medico">Médico:</label>
+                <select id="medico" name="medico">
+                    <option value="">Selecione</option>
+                    <option value="dr1">Dr. Davi brito</option>
+                    <option value="dr2">Dr. Arrascaeta</option>
+                    <option value="dr3">Dr. jacinto</option>
+                </select>
+            </ul>
+
+            <ul>
+                <label for="datahora">Data/Hora:</label>
+                <input type="datetime-local" id="datahora" name="datahora">
+            </ul>
+        </ol>
+
+        <button type="submit">Agendar</button>
+        <button type="button" onclick="window.history.back();">Voltar</button>
+    </form>
+
+</body>
+
+</html>
